@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, DroidFindMain!</string>
-    <string name="app_name">droidfind</string>
+	<string name="app_name">DroidFind</string>
+
+	<string name="prefs_title">DroidFind Preferences</string>
+	<string name="prefs_button_label">Preferences</string>
+	<string name="service_button_label">Service</string>
+	<string name="test">test</string>
+
+	<string name="phone_information">Current SIM Information</string>
+	<string name="phone_number_title">Phone Number</string>
+	<string name="phone_number_data">Unknown</string>
+	<string name="phone_number_unknown">Could not determine current phone number from SIM
+	</string>
+
+	<string name="sim_serial_title">SIM Serial</string>
+	<string name="sim_serial_data">Unknown</string>
+	<string name="sim_serial_not_whitelisted">This SIM is not whitelisted</string>
+	<string name="sim_serial_whitelisted">This SIM is whitelisted</string>
+
+	<string name="imsi_title">IMSI</string>
+	<string name="imsi_data">Unknown</string>
+
+	<string name="saved_settings">Saved Settings</string>
+	<string name="alerted_number_not_set">Alerted Number not set</string>
+	<string name="alerted_number_set">Alerted Number</string>
+	<string name="alerted_number_data"></string>
+
+	<string name="sim_alert_title">Whitelist SIM</string>
+	<string name="sim_alert_msg">Add current SIM to whitelist ? DroidFind will not
+		alert you for this SIM</string>
+
+	<string name="addAlerted_alert_title">Add Alerted Number</string>
+	<string name="addAlerted_alert_msg">Add a number which will be alerted when the SIM
+		changes</string>
+	<string name="alerted_num_pref">Add alerted number</string>
+	<string name="about_title">DroidFind</string>
+	<string name="whitelist_cleared">Whitelist cleared</string>
+	<string name="about_msg">DroidFind alerts a number of your choice (by
+		SMS)
+		with the location of the user and the new SIM details whenever
+		the SIM
+		is changed. You can whitelist SIMs that are known to you to
+		avoid
+		unnecessary alerts.\nAt bootup, DroidFind will check if the SIM is
+		whitelisted.
+		If not, it will alert the number you provide with the
+		location of your phone.</string>
 </resources>

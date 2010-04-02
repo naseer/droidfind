@@ -1,12 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingTop="2dip"
+		android:paddingBottom="2dip" android:paddingLeft="5dip"
+		android:text="@string/phone_information" style="?android:attr/listSeparatorTextViewStyle" />
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:paddingTop="10dip"
+		android:paddingBottom="10dip" android:paddingLeft="15dip"
+		android:id="@+id/phone_number_layout" android:background="@android:drawable/list_selector_background">
+
+		<TextView android:id="@+id/phone_number_title" android:text="@string/phone_number_title"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView android:id="@+id/phone_number_data" android:text="@string/phone_number_data"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+	</LinearLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:paddingTop="10dip" android:paddingBottom="10dip"
+			android:paddingLeft="15dip" android:id="@+id/sim_serial_layout"
+			android:longClickable="true" android:background="@android:drawable/list_selector_background">
+
+			<TextView android:id="@+id/sim_serial_title" android:text="@string/sim_serial_title"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView android:id="@+id/sim_serial_data" android:text="@string/sim_serial_data"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+			<TextView android:id="@+id/sim_serial_whitelist"
+				android:text="@string/sim_serial_not_whitelisted"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+		</LinearLayout>
+		<ImageView android:src="@drawable/uncheck" android:id="@+id/sim_serial_img"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingTop="30dip" android:paddingBottom="10dip"
+			android:paddingRight="10dip" android:layout_alignParentRight="true"
+			android:paddingLeft="15dip" />
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:paddingTop="10dip" android:paddingBottom="10dip"
+		android:paddingLeft="15dip" android:id="@+id/imsi_layout"
+		android:longClickable="true" android:background="@android:drawable/list_selector_background">
+
+		<TextView android:id="@+id/imsi_title" android:text="@string/imsi_title"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView android:id="@+id/imsi_data" android:text="@string/imsi_data"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+	</LinearLayout>
+
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingTop="2dip"
+		android:paddingBottom="2dip" android:paddingLeft="5dip"
+		android:text="@string/saved_settings" style="?android:attr/listSeparatorTextViewStyle" />
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:paddingTop="10dip" android:paddingBottom="10dip"
+		android:paddingLeft="15dip" android:id="@+id/alerted_number_layout"
+		android:longClickable="true" android:background="@android:drawable/list_selector_background">
+
+		<TextView android:id="@+id/alerted_number_title"
+			android:text="@string/alerted_number_not_set" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView android:id="@+id/alerted_number_data" android:text="@string/alerted_number_data"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	</LinearLayout>
+
+
+	<!-- Test <Button android:id="@+id/service_button" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:text="@string/service_button_label" 
+		/> -->
 </LinearLayout>
